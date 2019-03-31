@@ -1,28 +1,30 @@
 <template>
-    <div class="news">
+    <div :class="template">
       <h2 v-if="data.length !== 0">{{title}}</h2>
       <div class="row">
         <div v-for="(item, index) in data" :key="index" class="col-lg-3 col-sm-6 card">
           <div class="card--item">
             <div class="description">
               <img width="100%" height="170px" :src="item.img" alt="">
-              <h3>
-                {{
+              <div class="info">
+                <h3>
+                  {{
                   $route.params.lang === 'ru' ?
                   item.titleRU :
                   $route.params.lang === 'ua' ?
                   item.titleUA :
                   item.titleRU
-                }}
-              </h3>
-              <p>{{
+                  }}
+                </h3>
+                <p>{{
                   $route.params.lang === 'ru' ?
                   item.miniDescriptionRU :
                   $route.params.lang === 'ua' ?
                   item.miniDescriptionUA :
                   item.miniDescriptionRU
-                }}
-              </p>
+                  }}
+                </p>
+              </div>
             </div>
             <button @click="changeRoute(item._id)">Перейти к заказу</button>
           </div>
@@ -70,12 +72,61 @@
 <style lang="scss" scoped>
   $amazon: #417B5A;
 
-  .news{
+  .block{
     padding: 50px 0 70px 0;
     width: 100%;
     .row{
       display: flex;
-      /*justify-content: space-between;*/
+      .card{
+        border: 1px solid $amazon;
+        margin: 0 10px 30px 10px;
+        padding: 20px 10px;
+        transition: all .2s;
+        max-width: 270px;
+        &:hover{
+          -webkit-box-shadow: 0px 0px 20px 0px rgba(65,123,90,1);
+          -moz-box-shadow: 0px 0px 20px 0px rgba(65,123,90,1);
+          box-shadow: 0px 0px 20px 0px rgba(65,123,90,1);
+        }
+        div.card--item{
+          min-height: 300px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          a{
+            border: 1px solid $amazon;
+            border-radius: 5px;
+            text-align: center;
+            color: $amazon;
+            padding: 2px 8px;
+            text-decoration: none;
+            transition: .2s;
+            &:hover{
+              background: $amazon;
+              color: #fff;
+            }
+          }
+          .description{
+            img{
+              border-radius: 2px;
+            }
+            h3{
+              font-size: 20px;
+              font-weight: bold;
+              padding: 5px 0 0 0;
+            }
+            p{
+              font-size: 14px;
+              margin: 0;
+              padding-bottom: 5px;
+            }
+            p.description--date{
+              font-size: 12px;
+              padding: 0;
+            }
+          }
+        }
+      }
     }
     h2{
       padding-bottom: 50px;
@@ -85,56 +136,67 @@
       color: $amazon;
     }
   }
-  .card{
-    border: 1px solid $amazon;
-    margin: 0 10px 30px 10px;
-    padding: 20px 10px;
-    transition: all .2s;
-    max-width: 270px;
-    &:hover{
-      -webkit-box-shadow: 0px 0px 20px 0px rgba(65,123,90,1);
-      -moz-box-shadow: 0px 0px 20px 0px rgba(65,123,90,1);
-      box-shadow: 0px 0px 20px 0px rgba(65,123,90,1);
-    }
-    div.card--item{
-      min-height: 300px;
+  .blog{
+    padding-top: 50px;
+    .row{
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      a{
+      .card{
         border: 1px solid $amazon;
-        border-radius: 5px;
-        text-align: center;
-        color: $amazon;
-        padding: 2px 8px;
-        text-decoration: none;
-        transition: .2s;
+        margin: 0 10px 30px 10px;
+        padding: 20px 10px;
+        transition: all .2s;
+        max-width: 100%;
         &:hover{
-          background: $amazon;
-          color: #fff;
+          -webkit-box-shadow: 0px 0px 20px 0px rgba(65,123,90,1);
+          -moz-box-shadow: 0px 0px 20px 0px rgba(65,123,90,1);
+          box-shadow: 0px 0px 20px 0px rgba(65,123,90,1);
         }
-      }
-      .description{
-        img{
-          border-radius: 2px;
-        }
-        h3{
-          font-size: 20px;
-          font-weight: bold;
-          padding: 5px 0 0 0;
-        }
-        p{
-          font-size: 14px;
-          margin: 0;
-          padding-bottom: 5px;
-        }
-        p.description--date{
-          font-size: 12px;
-          padding: 0;
+        div.card--item{
+          min-height: 250px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          a{
+            border: 1px solid $amazon;
+            border-radius: 5px;
+            text-align: center;
+            color: $amazon;
+            padding: 2px 8px;
+            text-decoration: none;
+            transition: .2s;
+            &:hover{
+              background: $amazon;
+              color: #fff;
+            }
+          }
+          .description{
+            display: flex;
+            img{
+              max-width: 50%;
+              border-radius: 2px;
+              padding-right: 20px;
+            }
+            h3{
+              font-size: 20px;
+              font-weight: bold;
+              padding: 5px 0 0 0;
+            }
+            p{
+              font-size: 14px;
+              margin: 0;
+              padding-bottom: 5px;
+            }
+            p.description--date{
+              font-size: 12px;
+              padding: 0;
+            }
+          }
         }
       }
     }
   }
+
   .show-more-link{
     display: flex;
     justify-content: center;
@@ -160,28 +222,28 @@
     transition: .2s;
   }
   @media (max-width: 1200px) {
-    .news{
+    .block{
       h2{
         font-size: 45px;
       }
     }
   }
   @media (max-width: 992px) {
-    .news{
+    .block{
       h2{
         font-size: 36px;
       }
     }
   }
   @media (max-width: 768px) {
-    .news{
+    .block{
       h2{
         font-size: 28px;
       }
     }
   }
   @media (max-width: 576px) {
-    .news{
+    .block{
       padding: 40px 0;
       h2{
         font-size: 24px;
