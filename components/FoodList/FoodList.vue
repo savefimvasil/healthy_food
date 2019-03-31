@@ -1,5 +1,5 @@
 <template>
-    <div :class="template">
+    <div :class="template || 'block'">
       <h2 v-if="data.length !== 0">{{title}}</h2>
       <div class="row">
         <div v-for="(item, index) in data" :key="index" class="col-lg-3 col-sm-6 card">
