@@ -4,7 +4,7 @@
         <nuxt-link class="title" to="/">Health food</nuxt-link>
         <div class="navigation">
           <button class="changeLang" @click="selectLang">{{$i18n.locale}}</button>
-          <nuxt-link :to="'/' + $i18n.locale + '/FoodList'">Наши обеды</nuxt-link>
+          <nuxt-link :to="'/' + $i18n.locale + '/dishes'">Наши обеды</nuxt-link>
           <nuxt-link :to="'/' + $i18n.locale + '/admin'">Админ</nuxt-link>
         </div>
         <div class="burger-menu">
@@ -13,7 +13,7 @@
              @click="isBurgerOpen = !isBurgerOpen"
           ></i>
           <div :class="!isBurgerOpen? 'burger-menu-list closed' : 'burger-menu-list open'">
-            <nuxt-link :to="'/' + $i18n.locale + '/FoodList'">Наши обеды</nuxt-link>
+            <nuxt-link :to="'/' + $i18n.locale + '/dishes'">Наши обеды</nuxt-link>
             <nuxt-link :to="'/' + $i18n.locale + '/admin'">Админ</nuxt-link>
           </div>
           <div

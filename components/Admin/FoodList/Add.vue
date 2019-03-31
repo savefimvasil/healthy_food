@@ -57,7 +57,7 @@
 
         this.post.img = logoImageSrc
 
-        let url = 'http://localhost:4000/FoodList/add';
+        let url = 'http://localhost:4000/dishes/add';
         axios.post(url, this.post).then(() => {
           this.$router.push('/' + this.$i18n.locale + '/admin')
         });

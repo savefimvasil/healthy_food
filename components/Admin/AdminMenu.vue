@@ -3,7 +3,7 @@
       <div class="container">
         <h1>Админ панель</h1>
         <div class="admin-menu">
-          <nuxt-link :to="'/' + $i18n.locale + '/admin/FoodList'" @click="selectCategory('news')" :class="selectedCategory === 'news' ? 'selected': ''">Каталог обедов</nuxt-link>
+          <nuxt-link :to="'/' + $i18n.locale + '/admin/dishes'" @click="selectCategory('news')" :class="selectedCategory === 'news' ? 'selected': ''">Каталог обедов</nuxt-link>
         </div>
       </div>
     </div>

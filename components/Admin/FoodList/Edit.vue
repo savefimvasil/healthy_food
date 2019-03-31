@@ -41,7 +41,7 @@
         let id = this.$route.query.editId
         let uri = `http://localhost:4000/FoodList/update/${id}`;
         axios.post(uri, this.post).then(() => {
-          this.$router.push('/' + this.$i18n.locale + '/admin/FoodList')
+          this.$router.push('/' + this.$i18n.locale + '/admin/dishes')
         });
       }
     },

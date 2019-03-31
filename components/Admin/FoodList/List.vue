@@ -14,7 +14,7 @@
         <td>{{ post.titleRU }}</td>
         <td>{{ post.miniDescriptionRU }}</td>
         <td width="150px" class="buttons-td">
-          <nuxt-link :to="'/' + $i18n.locale + '/admin/FoodList?editId=' + post._id">Edit</nuxt-link>
+          <nuxt-link :to="'/' + $i18n.locale + '/admin/dishes?editId=' + post._id">Edit</nuxt-link>
           <a @click.prevent="deletePost(post._id)">Delete</a>
         </td>
       </tr>

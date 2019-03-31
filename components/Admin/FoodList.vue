@@ -27,7 +27,7 @@
     },
     methods: {
       selectCategory(val) {
-        this.$router.push('/' + this.$i18n.locale + '/admin/FoodList')
+        this.$router.push('/' + this.$i18n.locale + '/admin/dishes')
         this.selectedCategory = val
       }
     },

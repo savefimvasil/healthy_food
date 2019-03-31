@@ -25,6 +25,26 @@ postRoutes.route('/').get(function (req, res) {
   });
 });
 
+postRoutes.route('/findByParent/:id').get(function (req, res) {
+  let id = req.params.id
+  let adds = []
+  Post.find(function(err, posts){
+    if(err){
+      res.json(err);
+    }
+    else {
+      for (let key in posts) {
+        if(id === 'undefined' && posts[key].parentPost.length === 0){
+          adds.push(posts[key])
+        } else if(posts[key].parentPost[0] === id){
+          adds.push(posts[key])
+        }
+      }
+      res.json(adds);
+    }
+  });
+});
+
 postRoutes.route('/edit/:id').get(function (req, res) {
   let id = req.params.id;
   Post.findById(id, function (err, post){

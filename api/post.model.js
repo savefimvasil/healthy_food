@@ -23,6 +23,12 @@ let Post = new Schema({
   },
   miniDescriptionRU: {
     type: String
+  },
+  blockView: {
+    type: String
+  },
+  sortType: {
+    type: String
   }
 },{
     collection: 'posts'

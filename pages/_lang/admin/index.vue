@@ -10,7 +10,6 @@
   import Footer from '../../../components/Footer/Footer'
   import AdminNews from '../../../components/Admin/FoodList'
 
-  import axios from 'axios'
   export default {
     name: "admin",
     components: {

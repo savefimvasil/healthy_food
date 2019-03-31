@@ -24,10 +24,10 @@
                 }}
               </p>
             </div>
-            <nuxt-link :to="'/' + $i18n.locale + '/FoodList/' + item._id">Перейти к заказу</nuxt-link></div>
+            <nuxt-link :to="'/' + $i18n.locale + '/dishes/' + item._id">Перейти к заказу</nuxt-link></div>
         </div>
       </div>
-      <nuxt-link v-if="showMore" :to="'/' + $i18n.locale + '/FoodList/'" class="show-more-link">Перейти к полному списку обедов</nuxt-link>
+      <nuxt-link v-if="showMore" :to="'/' + $i18n.locale + '/dishes/'" class="show-more-link">Перейти к полному списку обедов</nuxt-link>
     </div>
 </template>
 
@@ -44,6 +44,7 @@
 
   .news{
     padding: 50px 0 70px 0;
+    width: 100%;
     .row{
       display: flex;
       /*justify-content: space-between;*/
