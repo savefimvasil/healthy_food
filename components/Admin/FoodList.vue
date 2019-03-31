@@ -2,11 +2,10 @@
   <div class="admin-news">
     <div class="admin-news-menu">
       <button :class="selectedCategory === 'add' ? 'selected' : ''" @click="selectCategory('add')">Добавить</button>
-      <button :class="selectedCategory === 'list' ? 'selected' : ''"  @click="selectCategory('list')">Редактировать</button>
     </div>
     <div class="admin-news-form">
-      <AddPost v-if="selectedCategory === 'add'" />
-      <list-of-posts v-if="selectedCategory === 'list'"/>
+      <list-of-posts/>
+      <AddPost v-if="selectedCategory === 'add' && $route.query.isAdd" />
     </div>
   </div>
 </template>
@@ -27,7 +26,7 @@
     },
     methods: {
       selectCategory(val) {
-        this.$router.push('/' + this.$i18n.locale + '/admin/dishes')
+        this.$router.push({path: '/' + this.$i18n.locale + '/admin/dishes', query: { isAdd: true,  addId: this.$route.query.parentId, parentId: this.$route.query.parentId} })
         this.selectedCategory = val
       }
     },

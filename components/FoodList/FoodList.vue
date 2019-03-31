@@ -1,8 +1,8 @@
 <template>
     <div class="news">
-      <h2>{{title}}</h2>
+      <h2 v-if="data.length !== 0">{{title}}</h2>
       <div class="row">
-        <div v-for="(item, index) in news" :key="index" class="col-lg-3 col-sm-6 card">
+        <div v-for="(item, index) in data" :key="index" class="col-lg-3 col-sm-6 card">
           <div class="card--item">
             <div class="description">
               <img width="100%" height="170px" :src="item.img" alt="">
@@ -24,10 +24,10 @@
                 }}
               </p>
             </div>
-            <nuxt-link :to="'/' + $i18n.locale + '/dishes/' + item._id">Перейти к заказу</nuxt-link></div>
+            <button @click="changeRoute(item._id)">Перейти к заказу</button>
+          </div>
         </div>
       </div>
-      <nuxt-link v-if="showMore" :to="'/' + $i18n.locale + '/dishes/'" class="show-more-link">Перейти к полному списку обедов</nuxt-link>
     </div>
 </template>
 
@@ -35,7 +35,38 @@
 <script>
   export default {
     name: "News",
-    props: ['news', 'title', 'showMore']
+    props: ['news', 'title', 'template', 'sort'],
+    methods: {
+      changeRoute(id) {
+        this.$router.push({ path: '/' + this.$i18n.locale + '/dishes/' + id, query: { parentId: id } })
+        this.query = id
+      },
+    },
+    computed: {
+      data() {
+        let sort = this.sort
+        let data = []
+        for(let a in this.news){
+          data.push(this.news[a])
+        }
+        data.sort(function(a, b){
+          let keyA = a.titleUA
+          let keyB = b.titleUA
+          if(sort === 'asc') {
+            if(keyA < keyB) return -1;
+            if(keyA > keyB) return 1;
+          } else if (sort === 'desc') {
+            if(keyA < keyB) return 1;
+            if(keyA > keyB) return -1;
+          }
+          return 0;
+        });
+        return data
+      }
+    },
+    created() {
+      console.log('12', this.sort)
+    }
   }
 </script>
 

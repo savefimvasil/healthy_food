@@ -2,9 +2,11 @@
   <div class="news-page">
     <div class="container">
       <div class="row">
-        <News
-          :news="news"
+        <FoodList
+          :news="ammo"
           title="Все обеды"
+          :template="template"
+          :sort="sort"
         />
       </div>
       </div>
@@ -12,21 +14,58 @@
 </template>
 
 <script>
-  import News from '../../../components/FoodList/FoodList'
+  import FoodList from '../../../components/FoodList/FoodList'
+  import axios from 'axios'
 
   export default {
     name: "news",
     components: {
-      News
+      FoodList
     },
-    data () {
-      return {
-        news: null
+    data() {
+      return{
+        query: undefined,
+        firstLoad: false,
+        template: '',
+        sort: ''
+      }
+    },
+    methods: {
+      getAds(){
+        if(this.$route.query.parentId) {
+          this.query = this.$route.query.parentId
+        } else this.query = undefined
+        this.$store.dispatch('ammo/getAllNewsById', this.query)
+        this.firstLoad = true
+      },
+      async getTemplate() {
+        let id = this.$route.query.parentId
+        if(id !== undefined) {
+          let url = `http://localhost:4000/foodlist/edit/${id}`;
+          await axios.get(url).then((response) => {
+            this.template = response.data.blockView
+            this.sort = response.data.sortType
+          });
+        } else {
+          this.template = 'block'
+          this.sort = 'asc'
+        }
       }
     },
     async created() {
-      await this.$store.dispatch('news/getAllNewsFromApi')
-      this.news = this.$store.state.news
+      this.getAds()
+      this.getTemplate()
+    },
+    computed: {
+      ammo() {
+        return this.$store.state.ammo
+      }
+    },
+    watch: {
+      '$route' (to, from) {
+        this.getAds()
+        this.getTemplate()
+      }
     }
   }
 </script>

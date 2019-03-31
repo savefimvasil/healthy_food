@@ -22,6 +22,20 @@
           <input placeholder="Краткое описание RU" type="text" class="form-control" v-model="post.miniDescriptionRU">
         </div>
       </div>
+      <div class="row">
+        <label>template:</label>
+        <select v-model="post.blockView">
+          <option>block</option>
+          <option>blog</option>
+        </select>
+      </div>
+      <div class="row">
+        <label>sort:</label>
+        <select v-model="post.sortType">
+          <option>asc</option>
+          <option>desc</option>
+        </select>
+      </div>
       <button class="btn btn-primary">Обновить</button>
     </form>
   </div>

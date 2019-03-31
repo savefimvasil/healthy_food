@@ -66,6 +66,8 @@ postRoutes.route('/update/:id').post(function (req, res) {
         post.descriptionUA = req.body.descriptionUA
         post.miniDescriptionRU = req.body.miniDescriptionRU
         post.miniDescriptionUA = req.body.miniDescriptionUA
+        post.sortType = req.body.sortType
+        post.blockView = req.body.blockView
         post.save().then(() => {
           res.json('Update complete');
       })

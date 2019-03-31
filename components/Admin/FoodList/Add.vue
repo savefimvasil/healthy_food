@@ -33,8 +33,24 @@
       <div class="row main-image">
         <img v-if="logoImageSrc" :src="logoImageSrc" alt="" width="150px" height="100px">
       </div>
-      <br />
-      <button class="btn btn-primary">Create</button>
+      <div class="row">
+        <label>template:</label>
+        <select v-model="post.blockView">
+          <option>block</option>
+          <option>blog</option>
+        </select>
+      </div>
+      <div class="row">
+        <label>sort:</label>
+        <select v-model="post.sortType">
+          <option>asc</option>
+          <option>desc</option>
+        </select>
+      </div>
+      <br>
+      <div class="row">
+        <button>Create</button>
+      </div>
     </form>
   </div>
 </template>
@@ -51,15 +67,21 @@
     },
     methods: {
       async addPost(){
+        if(this.$route.query.parentId === undefined) {
+          this.post.parentId = []
+        } else this.post.parentPost = this.$route.query.parentId
+
         const logoImageExt = this.logoImage.name.slice(this.logoImage.name.lastIndexOf('.'))
         await fb.storage().ref(`ads/${this.post.titleRU}${logoImageExt}`).put(this.logoImage)
         const logoImageSrc = await fb.storage().ref(`ads/${this.post.titleRU}${logoImageExt}`).getDownloadURL()
 
         this.post.img = logoImageSrc
 
-        let url = 'http://localhost:4000/dishes/add';
+        console.log(this.post)
+
+        let url = 'http://localhost:4000/foodlist/add';
         axios.post(url, this.post).then(() => {
-          this.$router.push('/' + this.$i18n.locale + '/admin')
+          this.$router.push({ path: '/' + this.$i18n.locale + '/admin/dishes', query: { parentId: this.post.parentId } })
         });
       },
       onLogoChange (event) {

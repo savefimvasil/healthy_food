@@ -1,18 +1,18 @@
 <template>
   <div>
     <div class="container">
-      <News/>
+      <FoodList/>
     </div>
   </div>
 </template>
 
 <script>
-  import News from '../../../components/Admin/FoodList.vue'
+  import FoodList from '../../../components/Admin/FoodList.vue'
   export default {
     name: "news",
     layout: 'admin',
     components: {
-      News
+      FoodList
     }
   }
 </script>

@@ -2,21 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5867b238-ad25-4922-abe8-71a960b1bacb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/store/ammo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/post.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/post.model.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/post.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/post.route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Admin/AdminMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Admin/AdminMenu.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Admin/FoodList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Admin/FoodList.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Admin/FoodList/Add.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Admin/FoodList/Add.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Admin/FoodList/Edit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Admin/FoodList/Edit.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Admin/FoodList/List.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Admin/FoodList/List.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/FoodList/FoodList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/FoodList/FoodList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Header/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header/Header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_lang/FoodList/_idItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_lang/dishes/_idItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_lang/FoodList/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_lang/dishes/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_lang/admin/FoodList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_lang/admin/dishes.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_lang/admin/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_lang/admin/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_lang/admin/dishes.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_lang/admin/dishes.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_lang/dishes/_idItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_lang/dishes/_idItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_lang/dishes/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_lang/dishes/index.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,29 +28,63 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/_lang/admin/index.vue">
+        <entry file="file://$PROJECT_DIR$/pages/_lang/admin/dishes.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            <state relative-caret-position="45">
+              <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/_lang/dishes/index.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="24" column="4" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="62" selection-end-column="6" />
               <folding>
-                <element signature="e#105#159#0" expanded="true" />
+                <element signature="e#282#342#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/components/FoodList/FoodList.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/_lang/dishes/_idItem.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+              <folding>
+                <element signature="e#713#738#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/_lang/admin/dishes.vue">
+        <entry file="file://$PROJECT_DIR$/components/Admin/FoodList/Edit.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+            <state relative-caret-position="90">
+              <caret line="26" column="41" lean-forward="true" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/components/Admin/Ammo.vue">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/post.route.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="69" column="43" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -73,7 +105,6 @@
       <find>getLatestAds</find>
       <find>consoleLog</find>
       <find>split</find>
-      <find>console</find>
       <find>consol</find>
       <find>getLates</find>
       <find>lang</find>
@@ -87,6 +118,9 @@
       <find>news</find>
       <find>edit</find>
       <find>dishes</find>
+      <find>console</find>
+      <find>getA</find>
+      <find>this.getA</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -95,13 +129,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pages/admin/admin.vue" />
-        <option value="$PROJECT_DIR$/pages/admin/News.vue" />
-        <option value="$PROJECT_DIR$/pages/about.vue" />
-        <option value="$PROJECT_DIR$/pages/contacts.vue" />
-        <option value="$PROJECT_DIR$/pages/rent.vue" />
-        <option value="$PROJECT_DIR$/pages/admin/ammo.vue" />
-        <option value="$PROJECT_DIR$/pages/admin/news.vue" />
         <option value="$PROJECT_DIR$/layouts/admin.vue" />
         <option value="$PROJECT_DIR$/pages/admin/index.vue" />
         <option value="$PROJECT_DIR$/pages/news/index.vue" />
@@ -129,11 +156,7 @@
         <option value="$PROJECT_DIR$/locales/ru.json" />
         <option value="$PROJECT_DIR$/locales/ua.json" />
         <option value="$PROJECT_DIR$/components/Header/Main.vue" />
-        <option value="$PROJECT_DIR$/components/Admin/AdminMenu.vue" />
-        <option value="$PROJECT_DIR$/components/Admin/FoodList.vue" />
         <option value="$PROJECT_DIR$/nuxt.config.js" />
-        <option value="$PROJECT_DIR$/components/Admin/FoodList/Add.vue" />
-        <option value="$PROJECT_DIR$/components/Admin/FoodList/List.vue" />
         <option value="$PROJECT_DIR$/layouts/default.vue" />
         <option value="$PROJECT_DIR$/middleware/i18n.js" />
         <option value="$PROJECT_DIR$/pages/_lang/FoodList/index.vue" />
@@ -142,10 +165,21 @@
         <option value="$PROJECT_DIR$/components/Header/Header.vue" />
         <option value="$PROJECT_DIR$/pages/_lang/index.vue" />
         <option value="$PROJECT_DIR$/pages/_lang/admin/index.vue" />
-        <option value="$PROJECT_DIR$/components/FoodList/FoodList.vue" />
-        <option value="$PROJECT_DIR$/api/post.model.js" />
         <option value="$PROJECT_DIR$/api/server.js" />
+        <option value="$PROJECT_DIR$/store/ammo.js" />
+        <option value="$PROJECT_DIR$/components/Admin/Ammo.vue" />
+        <option value="$PROJECT_DIR$/api/post.model.js" />
+        <option value="$PROJECT_DIR$/components/Admin/FoodList/List.vue" />
+        <option value="$PROJECT_DIR$/components/Admin/AdminMenu.vue" />
+        <option value="$PROJECT_DIR$/components/Admin/Ammo/Add.vue" />
+        <option value="$PROJECT_DIR$/components/Admin/FoodList.vue" />
+        <option value="$PROJECT_DIR$/components/Admin/FoodList/Add.vue" />
         <option value="$PROJECT_DIR$/api/post.route.js" />
+        <option value="$PROJECT_DIR$/components/Admin/FoodList/Edit.vue" />
+        <option value="$PROJECT_DIR$/pages/_lang/dishes/index.vue" />
+        <option value="$PROJECT_DIR$/pages/_lang/admin/dishes.vue" />
+        <option value="$PROJECT_DIR$/pages/_lang/dishes/_idItem.vue" />
+        <option value="$PROJECT_DIR$/components/FoodList/FoodList.vue" />
       </list>
     </option>
   </component>
@@ -171,6 +205,11 @@
             <path>
               <item name="healthy_food" type="b2602c69:ProjectViewProjectNode" />
               <item name="healthy_food" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="healthy_food" type="b2602c69:ProjectViewProjectNode" />
+              <item name="healthy_food" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -182,6 +221,19 @@
             <path>
               <item name="healthy_food" type="b2602c69:ProjectViewProjectNode" />
               <item name="healthy_food" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="FoodList" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="healthy_food" type="b2602c69:ProjectViewProjectNode" />
+              <item name="healthy_food" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="FoodList" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="healthy_food" type="b2602c69:ProjectViewProjectNode" />
+              <item name="healthy_food" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -195,12 +247,7 @@
               <item name="healthy_food" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="_lang" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="healthy_food" type="b2602c69:ProjectViewProjectNode" />
-              <item name="healthy_food" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="dishes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -221,6 +268,11 @@
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/store" />
+      <recent name="$PROJECT_DIR$/components/Admin" />
+      <recent name="$PROJECT_DIR$/pages/_lang/admin" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/components/Main" />
       <recent name="$PROJECT_DIR$/pages/_lang" />
@@ -268,21 +320,22 @@
       <workItem from="1552293400205" duration="282000" />
       <workItem from="1552318139359" duration="16644000" />
       <workItem from="1552403007187" duration="18475000" />
-      <workItem from="1554045543370" duration="2135000" />
+      <workItem from="1554045543370" duration="11821000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140715000" />
+    <option name="totallyTimeSpent" value="150401000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="824" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.18957011" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.23770492" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.23770492" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -302,14 +355,10 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/store/README.md" />
-    <entry file="file://$PROJECT_DIR$/components/Ammunition/Ammunition.vue" />
-    <entry file="file://$PROJECT_DIR$/assets/News/1.jpg" />
     <entry file="file://$PROJECT_DIR$/pages/news.vue" />
     <entry file="file://$PROJECT_DIR$/pages/events.vue" />
     <entry file="file://$PROJECT_DIR$/components/UI/Carousel/Carousel.vue" />
     <entry file="file://$PROJECT_DIR$/static/favicon.ico" />
-    <entry file="file://$PROJECT_DIR$/pages/_lang/admin/ammo.vue" />
     <entry file="file://$PROJECT_DIR$/plugins/flickity.js" />
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -364,40 +413,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/healthy-index/main.jpg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/Admin/AdminMenu.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-359">
-          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/Admin/FoodList/Add.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="69" column="9" lean-forward="true" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
-          <folding>
-            <element signature="e#1544#1569#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/Admin/FoodList/List.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="72" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
-          <folding>
-            <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/Admin/FoodList/Edit.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="54" column="3" lean-forward="true" selection-start-line="54" selection-start-column="3" selection-end-line="54" selection-end-column="3" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/components/Footer/Footer.vue">
       <provider selected="true" editor-type-id="text-editor">
@@ -468,13 +483,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/_lang/dishes/_idItem.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/store/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -489,44 +497,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/Admin/FoodList.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
-          <folding>
-            <element signature="e#513#549#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/post.model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/post.route.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="52" column="7" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/_lang/dishes/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/_lang/index.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -534,13 +504,6 @@
           <folding>
             <element signature="e#208#249#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/FoodList/FoodList.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="15" selection-start-line="46" selection-start-column="15" selection-end-line="46" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -561,15 +524,135 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/_lang/admin/dishes.vue">
+    <entry file="file://$PROJECT_DIR$/store/ammo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        <state relative-caret-position="296">
+          <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/Admin/Ammo.vue">
+    <entry file="file://$PROJECT_DIR$/pages/_lang/admin/ammo.vue">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Admin/Ammo.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <folding>
+            <element signature="e#561#593#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Admin/Ammo/Add.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="72" column="64" lean-forward="true" selection-start-line="70" selection-start-column="8" selection-end-line="72" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Admin/Ammo/List.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="48" column="40" lean-forward="true" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Admin/AdminMenu.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Admin/FoodList/Add.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="92" column="34" lean-forward="true" selection-start-line="92" selection-start-column="34" selection-end-line="92" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Admin/FoodList/List.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="40" column="102" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="102" />
+          <folding>
+            <element signature="e#615#640#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Admin/FoodList.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+          <folding>
+            <element signature="e#375#411#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/post.model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/post.route.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="69" column="43" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/_lang/admin/dishes.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/_lang/dishes/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="24" column="4" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="62" selection-end-column="6" />
+          <folding>
+            <element signature="e#282#342#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Admin/FoodList/Edit.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="26" column="41" lean-forward="true" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/_lang/dishes/_idItem.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+          <folding>
+            <element signature="e#713#738#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/FoodList/FoodList.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

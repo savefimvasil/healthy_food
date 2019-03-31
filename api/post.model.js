@@ -3,6 +3,9 @@ const Schema = mongoose.Schema;
 
 // Define collection and schema for Post
 let Post = new Schema({
+  parentPost: {
+    type: Array
+  },
   titleUA: {
     type: String
   },
