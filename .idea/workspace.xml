@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5867b238-ad25-4922-abe8-71a960b1bacb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/store/ammo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/post.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/post.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/post.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/post.route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Admin/FoodList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Admin/FoodList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Admin/FoodList/Add.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Admin/FoodList/Add.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Admin/FoodList/Edit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Admin/FoodList/Edit.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Admin/FoodList/List.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Admin/FoodList/List.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/FoodList/FoodList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/FoodList/FoodList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_lang/admin/dishes.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_lang/admin/dishes.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_lang/dishes/_idItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_lang/dishes/_idItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_lang/dishes/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_lang/dishes/index.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -51,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/components/FoodList/FoodList.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+            <state relative-caret-position="142">
+              <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -320,12 +308,12 @@
       <workItem from="1552293400205" duration="282000" />
       <workItem from="1552318139359" duration="16644000" />
       <workItem from="1552403007187" duration="18475000" />
-      <workItem from="1554045543370" duration="11821000" />
+      <workItem from="1554045543370" duration="11880000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150401000" />
+    <option name="totallyTimeSpent" value="150460000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="824" extended-state="6" />
@@ -333,9 +321,9 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.18957011" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.18957011" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.23770492" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.23770492" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -649,8 +637,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/components/FoodList/FoodList.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        <state relative-caret-position="142">
+          <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
         </state>
       </provider>
     </entry>

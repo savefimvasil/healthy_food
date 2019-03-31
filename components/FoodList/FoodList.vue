@@ -63,9 +63,6 @@
         });
         return data
       }
-    },
-    created() {
-      console.log('12', this.sort)
     }
   }
 </script>
