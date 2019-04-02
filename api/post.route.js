@@ -45,6 +45,19 @@ postRoutes.route('/findByParent/:id').get(function (req, res) {
   });
 });
 
+postRoutes.route('/search/:id').get(function (req, res) {
+  let id = req.params.id;
+  Post.find(function (err, posts) {
+    if (err){
+      res.json(err);
+    }
+    else {
+      for (let key in posts)
+        if(id === posts[key].url) return res.json(posts[key])
+    }
+  })
+})
+
 postRoutes.route('/edit/:id').get(function (req, res) {
   let id = req.params.id;
   Post.findById(id, function (err, post){
@@ -68,6 +81,7 @@ postRoutes.route('/update/:id').post(function (req, res) {
         post.miniDescriptionUA = req.body.miniDescriptionUA
         post.sortType = req.body.sortType
         post.blockView = req.body.blockView
+        post.url = req.body.url
         post.save().then(() => {
           res.json('Update complete');
       })

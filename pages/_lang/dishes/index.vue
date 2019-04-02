@@ -55,6 +55,7 @@
     async created() {
       this.getAds()
       this.getTemplate()
+      console.log(this.$route)
     },
     computed: {
       ammo() {

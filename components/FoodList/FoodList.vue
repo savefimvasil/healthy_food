@@ -26,7 +26,7 @@
                 </p>
               </div>
             </div>
-            <button @click="changeRoute(item._id)">Перейти к заказу</button>
+            <button @click="changeRoute(item._id, item.url)">Перейти к заказу</button>
           </div>
         </div>
       </div>
@@ -39,8 +39,8 @@
     name: "News",
     props: ['news', 'title', 'template', 'sort'],
     methods: {
-      changeRoute(id) {
-        this.$router.push({ path: '/' + this.$i18n.locale + '/dishes/' + id, query: { parentId: id } })
+      changeRoute(id, url) {
+        this.$router.push({ path: '/' + this.$i18n.locale + '/dishes/' + url, query: { parentId: id }, params: { parentId: id } })
         this.query = id
       },
     },

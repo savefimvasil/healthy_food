@@ -83,7 +83,7 @@
       mounted() {
         let id = this.$route.params.idItem
 
-        let url = `http://localhost:4000/FoodList/edit/${id}`;
+        let url = `http://localhost:4000/FoodList/search/${id}`;
         axios.get(url).then((response) => {
           this.ad = response.data;
         });
