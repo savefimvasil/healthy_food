@@ -40,7 +40,7 @@
     props: ['news', 'title', 'template', 'sort'],
     methods: {
       changeRoute(id, url) {
-        this.$router.push({ path: '/' + this.$i18n.locale + '/dishes/' + url, query: { parentId: id }, params: { parentId: id } })
+        this.$router.push({ path: '/' + this.$i18n.locale + '/dishes/' + url, params: { parentId: id } })
         this.query = id
       },
     },

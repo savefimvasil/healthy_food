@@ -51,9 +51,7 @@
       },
       methods: {
         getAds(){
-          if(this.$route.query.parentId) {
-            this.query = this.$route.query.parentId
-          } else this.query = undefined
+          this.query = this.ad._id
           this.$store.dispatch('ammo/getAllNewsById', this.query)
           this.firstLoad = true
         },
@@ -75,6 +73,12 @@
         this.getAds()
         this.getTemplate()
       },
+      watch: {
+        '$route' (to, from) {
+          this.getAds()
+          this.getTemplate()
+        }
+      },
       computed: {
         ammo() {
           return this.$store.state.ammo
@@ -82,10 +86,10 @@
       },
       mounted() {
         let id = this.$route.params.idItem
-
         let url = `http://localhost:4000/FoodList/search/${id}`;
         axios.get(url).then((response) => {
           this.ad = response.data;
+          this.getAds()
         });
       }
     }
